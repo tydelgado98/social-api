@@ -6,7 +6,7 @@ const reactionSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'reactionSchema',
           },
-       reactionBody:   {
+       reactionBody: {
         type: String,
         required: true,
         maxlength: 280,
@@ -17,8 +17,6 @@ const reactionSchema = new Schema(
         default: Date.now(),
         get: time => todo(time)
       },
-
-
-
-
     })
+
+    module.exports = reactionSchema;
